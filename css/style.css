@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+/* ################# 공통 요소 ####################### */
+body{font-family: 'Noto Sans KR', sans-serif; font-size: 16px;}
+.inner{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+a{color:#2d2d2f;}
+/* ################# header ####################### */
+header{
+    border-bottom: 1px solid #dddddd;
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    min-width: 340px;
+}
+ul.gnb,.lnb_menu,.lnb{
+    display: flex;
+    justify-content: space-between;
+}
+ul.gnb li a{
+    height: 48px;
+    line-height: 48px;
+    display: inline-block;
+    font-size: 16px;
+    color:#2d2d2f;
+}
+.lnb_menu h2{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 48px;
+    letter-spacing: -1px;
+}
+.lnb_menu .lnb li{
+    margin-left: 24px;
+}
+.lnb_menu .lnb li a{
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    font-size: 13px;
+    color:#2d2d2f;
+}
+
+@media (max-width:1024px){
+    .inner{
+        width: 100%;
+    }
+}
